@@ -36,7 +36,7 @@ class UITestingEarlGreyTests: PSPDFTestCase {
             EarlGrey().selectElement(with: grey_accessibilityLabel("Outline")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
             EarlGrey().selectElement(with: grey_text("Bookmarks")).perform(grey_tap())
 
-            EarlGrey().selectElement(with: grey_accessibilityLabel("Page 1")).assert(with: grey_sufficientlyVisible()).perform(grey_swipeSlowInDirection(.left))
+            EarlGrey().selectElement(with: grey_accessibilityLabel("Page 1")).atIndex(0).assert(with: grey_sufficientlyVisible()).perform(grey_swipeSlowInDirection(.left))
             EarlGrey().selectElement(with: grey_text("Delete")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
 
             EarlGrey().selectElement(with: grey_accessibilityLabel("No Bookmarks")).assert(with: grey_sufficientlyVisible())
