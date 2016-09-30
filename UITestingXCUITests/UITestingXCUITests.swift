@@ -46,10 +46,10 @@ class UITestingXCUITests: PSPDFTestCase {
         let outlineButton = app.navigationBars.buttons["Outline"]
         outlineButton.tap()
         app.navigationBars["Outline"].buttons["Bookmarks"].tap()
-        
-        app.tables.staticTexts["World Map"].swipeLeft()
-        app.tables.buttons["Delete"].tap()
 
+        app.toolbars.buttons["Add"].tap()
+        app.tables.staticTexts["Page 1"].swipeLeft()
+        app.tables.buttons["Delete"].tap()
     }
     
 }
