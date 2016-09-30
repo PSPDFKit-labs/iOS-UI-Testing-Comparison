@@ -9,6 +9,24 @@ import PSPDFKit
 
 class UITestingKIFTests: PSPDFTestCase {
 
+    func testAddPage() {
+        tester.waitForView(withAccessibilityLabel: "Thumbnails")
+        tester.tapView(withAccessibilityLabel: "Thumbnails")
+
+        tester.waitForAnimationsToFinish()
+
+        tester.waitForView(withAccessibilityLabel: "Document Editor")
+        tester.tapView(withAccessibilityLabel: "Document Editor")
+
+        tester.waitForView(withAccessibilityLabel: "Add Page")
+        tester.tapView(withAccessibilityLabel: "Add Page")
+
+        tester.tapView(withAccessibilityLabel: "Add")
+        tester.tapView(withAccessibilityLabel: "Done")
+        tester.tapView(withAccessibilityLabel: "Discard Changes")
+        tester.tapView(withAccessibilityLabel: "Page 1")
+    }
+
     func testAddAndDeleteBookmark() {
         let fileURL = Bundle.main.bundleURL.appendingPathComponent("PSPDFKit 6 QuickStart Guide.pdf")
         let document = PSPDFDocument(url: fileURL)
