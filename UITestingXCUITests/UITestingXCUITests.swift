@@ -17,7 +17,7 @@ class UITestingXCUITests: PSPDFTestCase {
         XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
 
-        app.navigationBars["UITestingComparison.PDFView"].buttons["Search"].tap()
+        app.navigationBars.buttons["Search"].tap()
         
         let searchDocumentSearchField = app.searchFields["Search Document"]
         searchDocumentSearchField.typeText("PSPDF")
@@ -28,9 +28,9 @@ class UITestingXCUITests: PSPDFTestCase {
     func testAddPage() {
         XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
-        let uitestingcomparisonPdfviewNavigationBar = app.navigationBars["UITestingComparison.PDFView"]
-        uitestingcomparisonPdfviewNavigationBar.buttons["Thumbnails"].tap()
-        uitestingcomparisonPdfviewNavigationBar.buttons["Document Editor"].tap()
+        let navigationBar = app.navigationBars
+        navigationBar.buttons["Thumbnails"].tap()
+        navigationBar.buttons["Document Editor"].tap()
         app.buttons["Add Page"].tap()
 
         app.tables.staticTexts["Add"].tap()
@@ -43,7 +43,7 @@ class UITestingXCUITests: PSPDFTestCase {
     func testAddAndDeleteBookmark() {
         XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
-        let outlineButton = app.navigationBars["UITestingComparison.PDFView"].buttons["Outline"]
+        let outlineButton = app.navigationBars.buttons["Outline"]
         outlineButton.tap()
         app.navigationBars["Outline"].buttons["Bookmarks"].tap()
         
