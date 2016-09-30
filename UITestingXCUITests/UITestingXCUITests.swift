@@ -33,27 +33,24 @@ class UITestingXCUITests: PSPDFTestCase {
         uitestingcomparisonPdfviewNavigationBar.buttons["Thumbnails"].tap()
         uitestingcomparisonPdfviewNavigationBar.buttons["Document Editor"].tap()
         app.buttons["Add Page"].tap()
-        
-        let patternCell = app.tables.cells["Pattern"]
-        patternCell.tap()
-        patternCell.tap()
-        
-        let app2 = app
-        app2.tables.staticTexts["Commit"].tap()
+    
+        app.tables.staticTexts["Add"].tap()
         app.buttons["Done"].tap()
 
-        app.sheets.buttons["Save"].tap()
+        app.sheets.buttons["Discard Changes"].tap()
         app.collectionViews["Thumbnail Collection"].cells["Page 1"].tap()
     }
 
     func testAddAndDeleteBookmark() {
+        XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
-        let outlineButton = app.navigationBars["PSPDFKit 6 QuickStart Guide"].buttons["Outline"]
+        let outlineButton = app.navigationBars["UITestingComparison.PDFView"].buttons["Outline"]
         outlineButton.tap()
         app.navigationBars["Outline"].buttons["Bookmarks"].tap()
         
-        let tablesQuery = app.tables
-        let worldMapStaticText = tablesQuery.staticTexts["World Map"].swipeLeft()
+        app.tables.staticTexts["World Map"].swipeLeft()
+        app.tables.buttons["Delete"].tap()
+
     }
     
 }
