@@ -9,8 +9,6 @@
 //  UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
 //  This notice may not be removed from this file.
 //
-
-
 import XCTest
 
 extension XCTestCase {
@@ -19,7 +17,7 @@ extension XCTestCase {
     @nonobjc var system: KIFSystemTestActor { return system() }
 
     @nonobjc func waitForCondition(condition: @autoclosure @escaping () -> Bool, negateCondition: Bool = false) {
-            XCTAssertTrue(PSPDFWaitForConditionWithTimeout(30, negateCondition ? { !condition() } : { condition() }))
+        XCTAssertTrue(PSPDFWaitForConditionWithTimeout(30, negateCondition ? { !condition() } : { condition() }))
     }
     
     func tester(file : String = #file, _ line : Int = #line) -> KIFUITestActor {

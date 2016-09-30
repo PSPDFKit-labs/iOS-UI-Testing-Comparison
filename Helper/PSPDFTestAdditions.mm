@@ -1,6 +1,6 @@
 //
 //  PSPDFTestAdditions.m
-//  UITestingKIFTests
+//  UITestingComparison
 //
 //  Copyright © 2016 PSPDFKit GmbH. All rights reserved.
 //
