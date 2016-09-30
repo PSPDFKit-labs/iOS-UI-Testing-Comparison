@@ -10,6 +10,8 @@ import PSPDFKit
 class UITestingEarlGreyTests: PSPDFTestCase {
 
     override func setUp() {
+        super.setUp()
+
         // EarlGrey sends analytics by default. Let's disable that.
         // https://github.com/google/EarlGrey
         (GREYConfiguration.sharedInstance() as AnyObject).setValue(false, forConfigKey: kGREYConfigKeyAnalyticsEnabled)

@@ -10,6 +10,8 @@ import PSPDFKit
 class UITestingKIFTests: PSPDFTestCase {
 
     override func setUp() {
+        super.setUp()
+
         KIFEnableAccessibility()
     }
 
