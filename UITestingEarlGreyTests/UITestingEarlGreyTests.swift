@@ -8,6 +8,16 @@
 import PSPDFKit
 
 class UITestingEarlGreyTests: PSPDFTestCase {
+
+    func testAddPage() {
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Thumbnails")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Document Editor")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Add Page")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Add")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Done")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Discard Changes")).atIndex(0).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+        EarlGrey().selectElement(with: grey_accessibilityLabel("Page 1")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
+    }
     
     func testAddAndDeleteBookmark() {
         let fileURL = Bundle.main.bundleURL.appendingPathComponent("PSPDFKit 6 QuickStart Guide.pdf")
