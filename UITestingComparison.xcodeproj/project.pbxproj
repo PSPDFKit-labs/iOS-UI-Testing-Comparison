@@ -962,6 +962,7 @@
 				F87FFC551D9EAB8000F9CC11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F88E602A1D9D6F1D00AA67BF /* Build configuration list for PBXProject "UITestingComparison" */ = {
 			isa = XCConfigurationList;
