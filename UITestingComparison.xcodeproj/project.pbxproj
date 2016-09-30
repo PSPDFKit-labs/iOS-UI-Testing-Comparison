@@ -212,6 +212,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F853DA911D9E974A00579162 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F88E686C1D9E64BD00AA67BF /* Info.plist */,
+				F853DA8B1D9E968A00579162 /* UITestingXCUITests-Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F88E60261D9D6F1D00AA67BF = {
 			isa = PBXGroup;
 			children = (
@@ -313,8 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				F88E686D1D9E64BD00AA67BF /* UITestingXCUITests.swift */,
-				F88E686C1D9E64BD00AA67BF /* Info.plist */,
-				F853DA8B1D9E968A00579162 /* UITestingXCUITests-Bridging-Header.h */,
+				F853DA911D9E974A00579162 /* Resources */,
 			);
 			path = UITestingXCUITests;
 			sourceTree = "<group>";
