@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787C3D871D9EC63D00D6E764 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = F88E68731D9E64BE00AA67BF /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F853DA801D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
 		F853DA981D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
 		F853DA991D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
@@ -132,6 +133,7 @@
 			dstPath = "$(TEST_HOST)/..";
 			dstSubfolderSpec = 0;
 			files = (
+				787C3D871D9EC63D00D6E764 /* EarlGrey.framework in EarlGrey Copy Files */,
 			);
 			name = "EarlGrey Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
