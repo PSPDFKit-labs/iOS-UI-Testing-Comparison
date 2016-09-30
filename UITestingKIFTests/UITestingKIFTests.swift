@@ -25,7 +25,6 @@ class UITestingKIFTests: PSPDFTestCase {
         tester.tapView(withAccessibilityLabel: "Add")
         tester.tapView(withAccessibilityLabel: "Done")
         tester.tapView(withAccessibilityLabel: "Discard Changes")
-        tester.tapView(withAccessibilityLabel: "Page 1")
     }
 
     func testAddAndDeleteBookmark() {
