@@ -17,3 +17,5 @@
 #import "KIFUIObject.h"
 
 #import "XCTestCase-KIFAdditions.h"
+
+#import "KIFAccessibilityEnabler.h"

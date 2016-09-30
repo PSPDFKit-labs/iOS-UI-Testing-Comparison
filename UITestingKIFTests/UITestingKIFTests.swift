@@ -9,6 +9,10 @@ import PSPDFKit
 
 class UITestingKIFTests: PSPDFTestCase {
 
+    override func setUp() {
+        KIFEnableAccessibility()
+    }
+
     func testAddPage() {
         tester.waitForAnimationsToFinish()
         tester.waitForView(withAccessibilityLabel: "Thumbnails")
