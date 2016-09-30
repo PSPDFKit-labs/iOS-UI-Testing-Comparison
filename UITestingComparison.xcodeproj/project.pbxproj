@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F853DA7D1D9E876B00579162 /* PSPDFKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA7C1D9E876B00579162 /* PSPDFKIFTestCase.m */; };
 		F853DA7F1D9E8A5000579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA7E1D9E8A5000579162 /* PSPDFTestAdditions.mm */; };
 		F853DA801D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
 		F853DA811D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
+		F853DA8E1D9E968B00579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA8D1D9E968B00579162 /* PSPDTestCase.m */; };
+		F853DA8F1D9E968B00579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA8D1D9E968B00579162 /* PSPDTestCase.m */; };
+		F853DA901D9E968B00579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA8D1D9E968B00579162 /* PSPDTestCase.m */; };
 		F88E60331D9D6F1D00AA67BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E60321D9D6F1D00AA67BF /* AppDelegate.swift */; };
 		F88E60351D9D6F1D00AA67BF /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E60341D9D6F1D00AA67BF /* PDFViewController.swift */; };
 		F88E603A1D9D6F1D00AA67BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88E60391D9D6F1D00AA67BF /* Assets.xcassets */; };
@@ -138,9 +140,10 @@
 /* Begin PBXFileReference section */
 		38C094E020C3195592877570 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = "${SRCROOT}/Pods/EarlGrey/EarlGrey/EarlGrey.framework"; sourceTree = SRCROOT; };
 		F853DA731D9E86EB00579162 /* PSPDFTestAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSPDFTestAdditions.h; sourceTree = "<group>"; };
-		F853DA7B1D9E876B00579162 /* PSPDFKIFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPDFKIFTestCase.h; sourceTree = "<group>"; };
-		F853DA7C1D9E876B00579162 /* PSPDFKIFTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPDFKIFTestCase.m; sourceTree = "<group>"; };
 		F853DA7E1D9E8A5000579162 /* PSPDFTestAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PSPDFTestAdditions.mm; sourceTree = "<group>"; };
+		F853DA8B1D9E968A00579162 /* UITestingXCUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITestingXCUITests-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F853DA8C1D9E968B00579162 /* PSPDFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPDFTestCase.h; sourceTree = "<group>"; };
+		F853DA8D1D9E968B00579162 /* PSPDTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPDTestCase.m; sourceTree = "<group>"; };
 		F88E602F1D9D6F1D00AA67BF /* UITestingComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestingComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88E60321D9D6F1D00AA67BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88E60341D9D6F1D00AA67BF /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 		F88E60261D9D6F1D00AA67BF = {
 			isa = PBXGroup;
 			children = (
+				F853DA8C1D9E968B00579162 /* PSPDFTestCase.h */,
+				F853DA8D1D9E968B00579162 /* PSPDTestCase.m */,
 				F88E60311D9D6F1D00AA67BF /* UITestingComparison */,
 				F88E657C1D9E64BC00AA67BF /* UITestingEarlGreyTests */,
 				F88E65721D9E63B400AA67BF /* UITestingKIFTests */,
@@ -262,8 +267,6 @@
 				F88E65731D9E63B400AA67BF /* UITestingKIFTests.swift */,
 				F853DA731D9E86EB00579162 /* PSPDFTestAdditions.h */,
 				F853DA7E1D9E8A5000579162 /* PSPDFTestAdditions.mm */,
-				F853DA7B1D9E876B00579162 /* PSPDFKIFTestCase.h */,
-				F853DA7C1D9E876B00579162 /* PSPDFKIFTestCase.m */,
 				F88E68F11D9E6AB000AA67BF /* XCTestCaseKIFExtensions.swift */,
 				F8B4629B1D9E6DCD0052E5D5 /* Resources */,
 				F88E68B61D9E657B00AA67BF /* Vendor */,
@@ -311,6 +314,7 @@
 			children = (
 				F88E686D1D9E64BD00AA67BF /* UITestingXCUITests.swift */,
 				F88E686C1D9E64BD00AA67BF /* Info.plist */,
+				F853DA8B1D9E968A00579162 /* UITestingXCUITests-Bridging-Header.h */,
 			);
 			path = UITestingXCUITests;
 			sourceTree = "<group>";
@@ -472,6 +476,7 @@
 					F88E604D1D9D6F1D00AA67BF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QVLS8TQV4M;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F88E602E1D9D6F1D00AA67BF;
 					};
@@ -616,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88E68D51D9E67C900AA67BF /* UITestingEarlGreyTests.swift in Sources */,
+				F853DA8E1D9E968B00579162 /* PSPDTestCase.m in Sources */,
 				F88E68F01D9E6AA200AA67BF /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F853DA901D9E968B00579162 /* PSPDTestCase.m in Sources */,
 				F88E68D71D9E680500AA67BF /* UITestingXCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,9 +639,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F853DA8F1D9E968B00579162 /* PSPDTestCase.m in Sources */,
 				F88E65741D9E63B400AA67BF /* UITestingKIFTests.swift in Sources */,
 				F88E68F21D9E6AB000AA67BF /* XCTestCaseKIFExtensions.swift in Sources */,
-				F853DA7D1D9E876B00579162 /* PSPDFKIFTestCase.m in Sources */,
 				F853DA7F1D9E8A5000579162 /* PSPDFTestAdditions.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -856,6 +863,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QVLS8TQV4M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -865,6 +873,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITestingComparison;
 			};
@@ -874,6 +884,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QVLS8TQV4M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -883,6 +894,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = UITestingComparison;
 			};

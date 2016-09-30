@@ -11,7 +11,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "PSPDFTestAdditions.h"
 
 BOOL PSPDFWaitForConditionWithTimeout(NSTimeInterval timeout, PSPDFTestCondition condition) {

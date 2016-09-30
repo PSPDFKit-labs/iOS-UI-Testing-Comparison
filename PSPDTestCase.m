@@ -1,6 +1,6 @@
 //
-//  PSPDFKIFTestCase.m
-//  UITestingKIFTests
+//  PSPDFTestCase.m
+//  UITestingComparison
 //
 //  Copyright © 2016 PSPDFKit GmbH. All rights reserved.
 //
@@ -10,7 +10,7 @@
 //  This notice may not be removed from this file.
 //
 
-#import "PSPDFKIFTestCase.h"
+#import "PSPDFTestCase.h"
 
 @implementation PSPDFTestCase
 
@@ -20,11 +20,11 @@
     self.speed = self.class.defaultSpeed;
 }
 
-+ (PSPDFKIFTestCaseSpeed)defaultSpeed {
-    return PSPDFKIFTestCaseSpeedLudicrous;
++ (PSPDFTestCaseSpeed)defaultSpeed {
+    return PSPDFTestCaseSpeedLudicrous;
 }
 
-- (void)setSpeed:(PSPDFKIFTestCaseSpeed)speed {
+- (void)setSpeed:(PSPDFTestCaseSpeed)speed {
     _speed = speed;
     UIApplication.sharedApplication.keyWindow.layer.speed = speed;
 }
@@ -32,15 +32,10 @@
 - (void)testWithViewController:(UIViewController *)viewController testBlock:(nullable dispatch_block_t)testBlock {
     UIViewController *container = [self presentViewController:viewController];
 
-    // Wait until animations are done. (e.g. HUD)
-    PSPDF_WAIT(0.05f);
-
     @try {
         if (testBlock) testBlock();
     }
     @finally {
-        // We wait again, to ensure any presenting actions are properly committed.
-        PSPDF_WAIT(0.05f);
 
         // Dismiss on parent to ensure any other presented controllers are dismissed as well.
         UIViewController *presentingViewController = container.presentingViewController;

@@ -1,6 +1,6 @@
 //
-//  PSPDFKIFTestCase.h
-//  UITestingKIFTests
+//  PSPDFTestCase.h
+//  UITestingComparison
 //
 //  Copyright © 2016 PSPDFKit GmbH. All rights reserved.
 //
@@ -10,13 +10,14 @@
 //  This notice may not be removed from this file.
 //
 
-#import <KIF/KIF.h>
+#import <Foundation/Foundation.h>
+#import <XCTest/XCTestCase.h>
 #import "PSPDFTestAdditions.h"
 
-typedef NS_ENUM(NSUInteger, PSPDFKIFTestCaseSpeed) {
-    PSPDFKIFTestCaseSpeedNormal = 1,
-    PSPDFKIFTestCaseSpeedCI = 10,
-    PSPDFKIFTestCaseSpeedLudicrous = 100
+typedef NS_ENUM(NSUInteger, PSPDFTestCaseSpeed) {
+    PSPDFTestCaseSpeedNormal = 1,
+    PSPDFTestCaseSpeedCI = 10,
+    PSPDFTestCaseSpeedLudicrous = 100
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -24,10 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PSPDFTestCase : XCTestCase
 
 /// Test running speed. Sets CALayer.speed property on keyWindow's layer.
-@property (nonatomic) PSPDFKIFTestCaseSpeed speed;
+@property (nonatomic) PSPDFTestCaseSpeed speed;
 
 /// Default test running speed. Depends on whether runing on CI or not.
-@property (nonatomic, class, readonly) PSPDFKIFTestCaseSpeed defaultSpeed;
+@property (nonatomic, class, readonly) PSPDFTestCaseSpeed defaultSpeed;
 
 /// Pushes and pops a view controller.
 - (void)testWithViewController:(UIViewController *)viewController testBlock:(nullable NS_NOESCAPE dispatch_block_t)testBlock;

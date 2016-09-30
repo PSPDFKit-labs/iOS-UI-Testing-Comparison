@@ -20,8 +20,3 @@ _Pragma("clang diagnostic push") \
 _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
 expression \
 _Pragma("clang diagnostic pop")
-
-#define PSPDF_WAIT(factor) do { \
-[tester waitForAnimationsToFinish]; \
-[tester waitForTimeInterval: factor]; \
-[tester waitForAnimationsToFinish]; } while(0)

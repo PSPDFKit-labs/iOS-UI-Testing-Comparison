@@ -9,9 +9,6 @@
 //  UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
 //  This notice may not be removed from this file.
 //
-
-
-import XCTest
 import PSPDFKit
 
 class UITestingKIFTests: PSPDFTestCase {

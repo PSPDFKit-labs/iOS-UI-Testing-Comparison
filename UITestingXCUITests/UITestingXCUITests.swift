@@ -12,7 +12,7 @@
 
 import XCTest
 
-class UITestingXCUITests: XCTestCase {
+class UITestingXCUITests: PSPDFTestCase {
         
     override func setUp() {
         super.setUp()

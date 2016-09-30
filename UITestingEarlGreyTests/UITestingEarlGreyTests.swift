@@ -9,10 +9,7 @@
 //  UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
 //  This notice may not be removed from this file.
 //
-
-import XCTest
-
-class UITestingEarlGreyTests: XCTestCase {
+class UITestingEarlGreyTests: PSPDFTestCase {
     
     func testEarlGrey() {
         EarlGrey().selectElement(with: grey_accessibilityLabel("Thumbnails")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
