@@ -39,7 +39,7 @@ class UITestingEarlGreyTests: PSPDFTestCase {
             EarlGrey().selectElement(with: grey_accessibilityLabel("Page 1")).atIndex(0).assert(with: grey_sufficientlyVisible()).perform(grey_swipeSlowInDirection(.left))
             EarlGrey().selectElement(with: grey_text("Delete")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
 
-            EarlGrey().selectElement(with: grey_accessibilityLabel("No Bookmarks")).assert(with: grey_sufficientlyVisible())
+            EarlGrey().selectElement(with: grey_accessibilityLabel("No Bookmarks")).atIndex(0).assert(with: grey_sufficientlyVisible())
 
             XCTAssertEqual(controller.document!.bookmarks.count, 0)
         }
