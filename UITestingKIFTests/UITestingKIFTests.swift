@@ -10,6 +10,7 @@ import PSPDFKit
 class UITestingKIFTests: PSPDFTestCase {
 
     func testAddPage() {
+        tester.waitForAnimationsToFinish()
         tester.waitForView(withAccessibilityLabel: "Thumbnails")
         tester.tapView(withAccessibilityLabel: "Thumbnails")
 
@@ -47,6 +48,8 @@ class UITestingKIFTests: PSPDFTestCase {
 
         test(with: controller) {
             XCTAssertEqual(controller.document!.bookmarks.count, 0)
+
+            tester.waitForView(withAccessibilityLabel: "Bookmarks")
 
             tester.tapView(withAccessibilityLabel: "Bookmarks")
             XCTAssertEqual(controller.document!.bookmarks.count, 1)
