@@ -9,6 +9,12 @@ import PSPDFKit
 
 class UITestingEarlGreyTests: PSPDFTestCase {
 
+    override func setUp() {
+        // EarlGrey sends analytics by default. Let's disable that.
+        // https://github.com/google/EarlGrey
+        (GREYConfiguration.sharedInstance() as AnyObject).setValue(false, forConfigKey: kGREYConfigKeyAnalyticsEnabled)
+    }
+
     func testAddPage() {
         EarlGrey().selectElement(with: grey_accessibilityLabel("Thumbnails")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
         EarlGrey().selectElement(with: grey_accessibilityLabel("Document Editor")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
