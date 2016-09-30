@@ -21,7 +21,7 @@
 }
 
 + (PSPDFTestCaseSpeed)defaultSpeed {
-    return PSPDFTestCaseSpeedLudicrous;
+    return PSPDFTestCaseSpeedNormal;
 }
 
 - (void)setSpeed:(PSPDFTestCaseSpeed)speed {
