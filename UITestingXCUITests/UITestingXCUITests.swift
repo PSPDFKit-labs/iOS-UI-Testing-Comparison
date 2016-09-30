@@ -11,7 +11,6 @@ class UITestingXCUITests: PSPDFTestCase {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
-        //speed = .normal
     }
     
     func testSearch() {
@@ -33,7 +32,7 @@ class UITestingXCUITests: PSPDFTestCase {
         uitestingcomparisonPdfviewNavigationBar.buttons["Thumbnails"].tap()
         uitestingcomparisonPdfviewNavigationBar.buttons["Document Editor"].tap()
         app.buttons["Add Page"].tap()
-    
+
         app.tables.staticTexts["Add"].tap()
         app.buttons["Done"].tap()
 
