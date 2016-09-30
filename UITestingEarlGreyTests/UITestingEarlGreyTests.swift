@@ -13,12 +13,7 @@ import PSPDFKit
 
 class UITestingEarlGreyTests: PSPDFTestCase {
     
-    func testEarlGrey() {
-        EarlGrey().selectElement(with: grey_accessibilityLabel("Thumbnails")).assert(with: grey_sufficientlyVisible()).perform(grey_tap())
-    }
-
     func testAddAndDeleteBookmark() {
-        speed = .normal
         let fileURL = Bundle.main.bundleURL.appendingPathComponent("PSPDFKit 6 QuickStart Guide.pdf")
         let document = PSPDFDocument(url: fileURL)
         document.uid = NSUUID().uuidString
