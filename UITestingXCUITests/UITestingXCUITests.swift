@@ -9,12 +9,16 @@
 //  UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
 //  This notice may not be removed from this file.
 //
+
+import PSPDFKit
+
 class UITestingXCUITests: PSPDFTestCase {
         
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
+        //speed = .normal
     }
     
     func testSearch() {
@@ -50,6 +54,36 @@ class UITestingXCUITests: PSPDFTestCase {
         app.sheets.buttons["Save As…"].tap()
         app.navigationBars["Save As…"].buttons["Save"].tap()
         app.collectionViews["Thumbnail Collection"].cells["Page 1"].tap()
+    }
+
+    func testaddAndDeleteBookmark() {
+        let fileURL = Bundle.main.bundleURL.appendingPathComponent("PSPDFKit 6 QuickStart Guide.pdf")
+        let document = PSPDFDocument(url: fileURL)
+        document.uid = NSUUID().uuidString
+        if let bookmarkManager = document.bookmarkManager {
+            for bookmark in bookmarkManager.bookmarks {
+                bookmarkManager.removeBookmark(bookmark)
+            }
+        }
+
+        let configuration = PSPDFConfiguration() { builder in
+            builder.shouldAskForAnnotationUsername = false
+        }
+
+        let controller = PSPDFViewController(document:document, configuration:configuration)
+
+        controller.navigationItem.rightBarButtonItems = [controller.bookmarkButtonItem, controller.outlineButtonItem]
+
+        test(with: controller) {
+            let app = XCUIApplication()
+            let outlineButton = app.navigationBars["PSPDFKit 6 QuickStart Guide"].buttons["Outline"]
+            outlineButton.tap()
+            app.navigationBars["Outline"].buttons["Bookmarks"].tap()
+        
+            let tablesQuery = app.tables
+            let worldMapStaticText = tablesQuery.staticTexts["Page 1"].swipeLeft()
+        }
+
     }
     
 }
