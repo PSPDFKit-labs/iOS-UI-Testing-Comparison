@@ -32,16 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F88E604D1D9D6F1D00AA67BF"
-               BuildableName = "UITestingXCUITests.xctest"
-               BlueprintName = "UITestingXCUITests"
-               ReferencedContainer = "container:UITestingComparison.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "F88E60421D9D6F1D00AA67BF"
                BuildableName = "UITestingEarlGreyTests.xctest"
                BlueprintName = "UITestingEarlGreyTests"
@@ -55,6 +45,16 @@
                BlueprintIdentifier = "F88E65701D9E63B400AA67BF"
                BuildableName = "UITestingKIFTests.xctest"
                BlueprintName = "UITestingKIFTests"
+               ReferencedContainer = "container:UITestingComparison.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F87FFC4B1D9EAB8000F9CC11"
+               BuildableName = "UITestingXCUITests.xctest"
+               BlueprintName = "UITestingXCUITests"
                ReferencedContainer = "container:UITestingComparison.xcodeproj">
             </BuildableReference>
          </TestableReference>

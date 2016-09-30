@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F853DA801D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
-		F853DA811D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
 		F853DA981D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
 		F853DA991D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
-		F853DA9A1D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
 		F853DA9B1D9E9B3400579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA971D9E9B3400579162 /* PSPDTestCase.m */; };
 		F853DA9C1D9E9B3400579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA971D9E9B3400579162 /* PSPDTestCase.m */; };
-		F853DA9D1D9E9B3400579162 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA971D9E9B3400579162 /* PSPDTestCase.m */; };
+		F87FFC4F1D9EAB8000F9CC11 /* UITestingXCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FFC4E1D9EAB8000F9CC11 /* UITestingXCUITests.swift */; };
+		F87FFC571D9EACB700F9CC11 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
+		F87FFC581D9EACBA00F9CC11 /* PSPDTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F853DA971D9E9B3400579162 /* PSPDTestCase.m */; };
 		F88E60331D9D6F1D00AA67BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E60321D9D6F1D00AA67BF /* AppDelegate.swift */; };
 		F88E60351D9D6F1D00AA67BF /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E60341D9D6F1D00AA67BF /* PDFViewController.swift */; };
 		F88E603A1D9D6F1D00AA67BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88E60391D9D6F1D00AA67BF /* Assets.xcassets */; };
@@ -29,21 +29,20 @@
 		F88E68D11D9E66CC00AA67BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E68D01D9E66CC00AA67BF /* CoreGraphics.framework */; };
 		F88E68D31D9E66D600AA67BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E68D21D9E66D600AA67BF /* QuartzCore.framework */; };
 		F88E68D51D9E67C900AA67BF /* UITestingEarlGreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E68D41D9E67C900AA67BF /* UITestingEarlGreyTests.swift */; };
-		F88E68D71D9E680500AA67BF /* UITestingXCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E686D1D9E64BD00AA67BF /* UITestingXCUITests.swift */; };
 		F88E68F01D9E6AA200AA67BF /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E68EF1D9E6AA200AA67BF /* EarlGrey.swift */; };
 		F88E68F21D9E6AB000AA67BF /* XCTestCaseKIFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E68F11D9E6AB000AA67BF /* XCTestCaseKIFExtensions.swift */; };
 		F8B462991D9E6D710052E5D5 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E68731D9E64BE00AA67BF /* EarlGrey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F88E60441D9D6F1D00AA67BF /* PBXContainerItemProxy */ = {
+		F87FFC511D9EAB8000F9CC11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F88E60271D9D6F1D00AA67BF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F88E602E1D9D6F1D00AA67BF;
 			remoteInfo = UITestingComparison;
 		};
-		F88E604F1D9D6F1D00AA67BF /* PBXContainerItemProxy */ = {
+		F88E60441D9D6F1D00AA67BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F88E60271D9D6F1D00AA67BF /* Project object */;
 			proxyType = 1;
@@ -146,12 +145,14 @@
 		F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PSPDFTestAdditions.mm; sourceTree = "<group>"; };
 		F853DA961D9E9B3400579162 /* PSPDFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPDFTestCase.h; sourceTree = "<group>"; };
 		F853DA971D9E9B3400579162 /* PSPDTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPDTestCase.m; sourceTree = "<group>"; };
+		F87FFC4C1D9EAB8000F9CC11 /* UITestingXCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingXCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87FFC4E1D9EAB8000F9CC11 /* UITestingXCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingXCUITests.swift; sourceTree = "<group>"; };
+		F87FFC501D9EAB8000F9CC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88E602F1D9D6F1D00AA67BF /* UITestingComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestingComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88E60321D9D6F1D00AA67BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88E60341D9D6F1D00AA67BF /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		F88E60391D9D6F1D00AA67BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F88E60431D9D6F1D00AA67BF /* UITestingEarlGreyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingEarlGreyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F88E604E1D9D6F1D00AA67BF /* UITestingXCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingXCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PSPDFKit.framework; sourceTree = SOURCE_ROOT; };
 		F88E60631D9D6F5700AA67BF /* PSPDFKit 6 QuickStart Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PSPDFKit 6 QuickStart Guide.pdf"; sourceTree = "<group>"; };
 		F88E606D1D9E512A00AA67BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,8 +164,6 @@
 		F88E657D1D9E64BC00AA67BF /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		F88E657E1D9E64BC00AA67BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88E664B1D9E64BC00AA67BF /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EarlGrey.xcodeproj; sourceTree = "<group>"; };
-		F88E686C1D9E64BD00AA67BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F88E686D1D9E64BD00AA67BF /* UITestingXCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingXCUITests.swift; sourceTree = "<group>"; };
 		F88E68B81D9E65B800AA67BF /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = Vendor/KIF/KIF.xcodeproj; sourceTree = "<group>"; };
 		F88E68D01D9E66CC00AA67BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F88E68D21D9E66D600AA67BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -175,6 +174,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F87FFC491D9EAB8000F9CC11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F88E602C1D9D6F1D00AA67BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,14 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F88E604B1D9D6F1D00AA67BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F853DA811D9E911E00579162 /* PSPDFKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F88E656E1D9E63B400AA67BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,15 +212,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F853DA911D9E974A00579162 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F88E686C1D9E64BD00AA67BF /* Info.plist */,
-				F853DA921D9E9ACA00579162 /* UITestingXCUITests-Bridging-Header.h */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		F853DA931D9E9B3400579162 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +223,16 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		F87FFC4D1D9EAB8000F9CC11 /* UITestingXCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F87FFC4E1D9EAB8000F9CC11 /* UITestingXCUITests.swift */,
+				F853DA921D9E9ACA00579162 /* UITestingXCUITests-Bridging-Header.h */,
+				F87FFC501D9EAB8000F9CC11 /* Info.plist */,
+			);
+			path = UITestingXCUITests;
+			sourceTree = "<group>";
+		};
 		F88E60261D9D6F1D00AA67BF = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +240,7 @@
 				F88E60311D9D6F1D00AA67BF /* UITestingComparison */,
 				F88E657C1D9E64BC00AA67BF /* UITestingEarlGreyTests */,
 				F88E65721D9E63B400AA67BF /* UITestingKIFTests */,
-				F88E686B1D9E64BD00AA67BF /* UITestingXCUITests */,
+				F87FFC4D1D9EAB8000F9CC11 /* UITestingXCUITests */,
 				F88E60301D9D6F1D00AA67BF /* Products */,
 				F88E68CF1D9E66CC00AA67BF /* Frameworks */,
 			);
@@ -252,9 +251,9 @@
 			children = (
 				F88E602F1D9D6F1D00AA67BF /* UITestingComparison.app */,
 				F88E60431D9D6F1D00AA67BF /* UITestingEarlGreyTests.xctest */,
-				F88E604E1D9D6F1D00AA67BF /* UITestingXCUITests.xctest */,
 				38C094E020C3195592877570 /* EarlGrey.framework */,
 				F88E65711D9E63B400AA67BF /* UITestingKIFTests.xctest */,
+				F87FFC4C1D9EAB8000F9CC11 /* UITestingXCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -328,15 +327,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F88E686B1D9E64BD00AA67BF /* UITestingXCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F88E686D1D9E64BD00AA67BF /* UITestingXCUITests.swift */,
-				F853DA911D9E974A00579162 /* Resources */,
-			);
-			path = UITestingXCUITests;
-			sourceTree = "<group>";
-		};
 		F88E68B61D9E657B00AA67BF /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +386,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F87FFC4B1D9EAB8000F9CC11 /* UITestingXCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87FFC531D9EAB8000F9CC11 /* Build configuration list for PBXNativeTarget "UITestingXCUITests" */;
+			buildPhases = (
+				F87FFC481D9EAB8000F9CC11 /* Sources */,
+				F87FFC491D9EAB8000F9CC11 /* Frameworks */,
+				F87FFC4A1D9EAB8000F9CC11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87FFC521D9EAB8000F9CC11 /* PBXTargetDependency */,
+			);
+			name = UITestingXCUITests;
+			productName = UITestingXCUITests;
+			productReference = F87FFC4C1D9EAB8000F9CC11 /* UITestingXCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F88E602E1D9D6F1D00AA67BF /* UITestingComparison */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F88E60571D9D6F1D00AA67BF /* Build configuration list for PBXNativeTarget "UITestingComparison" */;
@@ -434,24 +442,6 @@
 			productReference = F88E60431D9D6F1D00AA67BF /* UITestingEarlGreyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F88E604D1D9D6F1D00AA67BF /* UITestingXCUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F88E605D1D9D6F1D00AA67BF /* Build configuration list for PBXNativeTarget "UITestingXCUITests" */;
-			buildPhases = (
-				F88E604A1D9D6F1D00AA67BF /* Sources */,
-				F88E604B1D9D6F1D00AA67BF /* Frameworks */,
-				F88E604C1D9D6F1D00AA67BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F88E60501D9D6F1D00AA67BF /* PBXTargetDependency */,
-			);
-			name = UITestingXCUITests;
-			productName = UITestingComparisonUITests;
-			productReference = F88E604E1D9D6F1D00AA67BF /* UITestingXCUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		F88E65701D9E63B400AA67BF /* UITestingKIFTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F88E65781D9E63B400AA67BF /* Build configuration list for PBXNativeTarget "UITestingKIFTests" */;
@@ -480,6 +470,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = PSPDFKit;
 				TargetAttributes = {
+					F87FFC4B1D9EAB8000F9CC11 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QVLS8TQV4M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F88E602E1D9D6F1D00AA67BF;
+					};
 					F88E602E1D9D6F1D00AA67BF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QVLS8TQV4M;
@@ -488,13 +484,6 @@
 					F88E60421D9D6F1D00AA67BF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QVLS8TQV4M;
-						ProvisioningStyle = Automatic;
-						TestTargetID = F88E602E1D9D6F1D00AA67BF;
-					};
-					F88E604D1D9D6F1D00AA67BF = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = QVLS8TQV4M;
-						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F88E602E1D9D6F1D00AA67BF;
 					};
@@ -532,7 +521,7 @@
 				F88E602E1D9D6F1D00AA67BF /* UITestingComparison */,
 				F88E60421D9D6F1D00AA67BF /* UITestingEarlGreyTests */,
 				F88E65701D9E63B400AA67BF /* UITestingKIFTests */,
-				F88E604D1D9D6F1D00AA67BF /* UITestingXCUITests */,
+				F87FFC4B1D9EAB8000F9CC11 /* UITestingXCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -590,6 +579,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F87FFC4A1D9EAB8000F9CC11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F88E602D1D9D6F1D00AA67BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,13 +604,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F88E604C1D9D6F1D00AA67BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F88E656F1D9E63B400AA67BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,6 +614,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F87FFC481D9EAB8000F9CC11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87FFC4F1D9EAB8000F9CC11 /* UITestingXCUITests.swift in Sources */,
+				F87FFC581D9EACBA00F9CC11 /* PSPDTestCase.m in Sources */,
+				F87FFC571D9EACB700F9CC11 /* PSPDFTestAdditions.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F88E602B1D9D6F1D00AA67BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -645,16 +644,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F88E604A1D9D6F1D00AA67BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F853DA9D1D9E9B3400579162 /* PSPDTestCase.m in Sources */,
-				F853DA9A1D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */,
-				F88E68D71D9E680500AA67BF /* UITestingXCUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F88E656D1D9E63B400AA67BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -669,15 +658,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F87FFC521D9EAB8000F9CC11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F88E602E1D9D6F1D00AA67BF /* UITestingComparison */;
+			targetProxy = F87FFC511D9EAB8000F9CC11 /* PBXContainerItemProxy */;
+		};
 		F88E60451D9D6F1D00AA67BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F88E602E1D9D6F1D00AA67BF /* UITestingComparison */;
 			targetProxy = F88E60441D9D6F1D00AA67BF /* PBXContainerItemProxy */;
-		};
-		F88E60501D9D6F1D00AA67BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F88E602E1D9D6F1D00AA67BF /* UITestingComparison */;
-			targetProxy = F88E604F1D9D6F1D00AA67BF /* PBXContainerItemProxy */;
 		};
 		F88E65771D9E63B400AA67BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -692,6 +681,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F87FFC541D9EAB8000F9CC11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QVLS8TQV4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = UITestingXCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests/UITestingXCUITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UITestingComparison;
+			};
+			name = Debug;
+		};
+		F87FFC551D9EAB8000F9CC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QVLS8TQV4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = UITestingXCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests/UITestingXCUITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UITestingComparison;
+			};
+			name = Release;
+		};
 		F88E60551D9D6F1D00AA67BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -879,47 +904,6 @@
 			};
 			name = Release;
 		};
-		F88E605E1D9D6F1D00AA67BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = QVLS8TQV4M;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = UITestingXCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests/UITestingXCUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = UITestingComparison;
-			};
-			name = Debug;
-		};
-		F88E605F1D9D6F1D00AA67BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = QVLS8TQV4M;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = UITestingXCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pspdfkit.UITestingXCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITestingXCUITests/UITestingXCUITests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = UITestingComparison;
-			};
-			name = Release;
-		};
 		F88E65791D9E63B400AA67BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -971,6 +955,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F87FFC531D9EAB8000F9CC11 /* Build configuration list for PBXNativeTarget "UITestingXCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87FFC541D9EAB8000F9CC11 /* Debug */,
+				F87FFC551D9EAB8000F9CC11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F88E602A1D9D6F1D00AA67BF /* Build configuration list for PBXProject "UITestingComparison" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -994,15 +986,6 @@
 			buildConfigurations = (
 				F88E605B1D9D6F1D00AA67BF /* Debug */,
 				F88E605C1D9D6F1D00AA67BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F88E605D1D9D6F1D00AA67BF /* Build configuration list for PBXNativeTarget "UITestingXCUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F88E605E1D9D6F1D00AA67BF /* Debug */,
-				F88E605F1D9D6F1D00AA67BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
