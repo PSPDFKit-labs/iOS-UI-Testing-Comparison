@@ -12,6 +12,7 @@ class UITestingKIFTests: PSPDFTestCase {
     override func setUp() {
         super.setUp()
 
+        // Sadness without that. KIFTestCase would do that for us, but we don't use it here.
         KIFEnableAccessibility()
     }
 
