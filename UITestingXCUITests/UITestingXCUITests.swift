@@ -11,11 +11,12 @@ class UITestingXCUITests: PSPDFTestCase {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
+        XCUIDevice.shared().orientation = .portrait
     }
 
     func testAddPage() {
-        XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
+        
         let navigationBar = app.navigationBars
         navigationBar.buttons["Thumbnails"].tap()
         navigationBar.buttons["Document Editor"].tap()
@@ -29,8 +30,8 @@ class UITestingXCUITests: PSPDFTestCase {
     }
 
     func testAddAndDeleteBookmark() {
-        XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
+
         let outlineButton = app.navigationBars.buttons["Outline"]
         outlineButton.tap()
         app.navigationBars["Outline"].buttons["Bookmarks"].tap()
@@ -41,7 +42,6 @@ class UITestingXCUITests: PSPDFTestCase {
     }
 
     func testSearch() {
-        XCUIDevice.shared().orientation = .portrait
         let app = XCUIApplication()
 
         app.navigationBars.buttons["Search"].tap()

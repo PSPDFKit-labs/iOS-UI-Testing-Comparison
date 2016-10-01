@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		787C3D871D9EC63D00D6E764 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = F88E68731D9E64BE00AA67BF /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		78BB21921D9FB397000EB5A6 /* TestControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB21911D9FB397000EB5A6 /* TestControllerFactory.swift */; };
+		78BB21931D9FB397000EB5A6 /* TestControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB21911D9FB397000EB5A6 /* TestControllerFactory.swift */; };
 		F853DA801D9E911E00579162 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E60601D9D6F3E00AA67BF /* PSPDFKit.framework */; };
 		F853DA981D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
 		F853DA991D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */; };
@@ -142,6 +144,7 @@
 
 /* Begin PBXFileReference section */
 		38C094E020C3195592877570 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = "${SRCROOT}/Pods/EarlGrey/EarlGrey/EarlGrey.framework"; sourceTree = SRCROOT; };
+		78BB21911D9FB397000EB5A6 /* TestControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestControllerFactory.swift; sourceTree = "<group>"; };
 		F853DA921D9E9ACA00579162 /* UITestingXCUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITestingXCUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F853DA941D9E9B3400579162 /* PSPDFTestAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPDFTestAdditions.h; sourceTree = "<group>"; };
 		F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PSPDFTestAdditions.mm; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 				F853DA951D9E9B3400579162 /* PSPDFTestAdditions.mm */,
 				F853DA961D9E9B3400579162 /* PSPDFTestCase.h */,
 				F853DA971D9E9B3400579162 /* PSPDTestCase.m */,
+				78BB21911D9FB397000EB5A6 /* TestControllerFactory.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -642,6 +646,7 @@
 				F853DA9B1D9E9B3400579162 /* PSPDTestCase.m in Sources */,
 				F88E68D51D9E67C900AA67BF /* UITestingEarlGreyTests.swift in Sources */,
 				F853DA981D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */,
+				78BB21921D9FB397000EB5A6 /* TestControllerFactory.swift in Sources */,
 				F88E68F01D9E6AA200AA67BF /* EarlGrey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +658,7 @@
 				F853DA991D9E9B3400579162 /* PSPDFTestAdditions.mm in Sources */,
 				F88E65741D9E63B400AA67BF /* UITestingKIFTests.swift in Sources */,
 				F88E68F21D9E6AB000AA67BF /* XCTestCaseKIFExtensions.swift in Sources */,
+				78BB21931D9FB397000EB5A6 /* TestControllerFactory.swift in Sources */,
 				F853DA9C1D9E9B3400579162 /* PSPDTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

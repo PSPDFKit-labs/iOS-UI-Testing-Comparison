@@ -7,6 +7,7 @@
 
 import PSPDFKit
 
+// https://github.com/kif-framework/KIF
 class UITestingKIFTests: PSPDFTestCase {
 
     override func setUp() {
@@ -35,22 +36,7 @@ class UITestingKIFTests: PSPDFTestCase {
     }
 
     func testAddAndDeleteBookmark() {
-        let fileURL = Bundle.main.bundleURL.appendingPathComponent("PSPDFKit 6 QuickStart Guide.pdf")
-        let document = PSPDFDocument(url: fileURL)
-        document.uid = NSUUID().uuidString
-        if let bookmarkManager = document.bookmarkManager {
-            for bookmark in bookmarkManager.bookmarks {
-                bookmarkManager.removeBookmark(bookmark)
-            }
-        }
-
-        let configuration = PSPDFConfiguration() { builder in
-            builder.shouldAskForAnnotationUsername = false
-        }
-
-        let controller = PSPDFViewController(document:document, configuration:configuration)
-
-        controller.navigationItem.rightBarButtonItems = [controller.bookmarkButtonItem, controller.outlineButtonItem]
+        let controller = TestControllerFactory().testAddAndDeleteBookmark()
 
         test(with: controller) {
             XCTAssertEqual(controller.document!.bookmarks.count, 0)
