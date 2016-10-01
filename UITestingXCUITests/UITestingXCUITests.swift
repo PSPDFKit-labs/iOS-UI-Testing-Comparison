@@ -12,18 +12,6 @@ class UITestingXCUITests: PSPDFTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
     }
-    
-    func testSearch() {
-        XCUIDevice.shared().orientation = .portrait
-        let app = XCUIApplication()
-
-        app.navigationBars.buttons["Search"].tap()
-        
-        let searchDocumentSearchField = app.searchFields["Search Document"]
-        searchDocumentSearchField.typeText("PSPDF")
-
-        app.tables["Search Results"].cells.element(boundBy: 0).tap()
-    }
 
     func testAddPage() {
         XCUIDevice.shared().orientation = .portrait
@@ -51,5 +39,16 @@ class UITestingXCUITests: PSPDFTestCase {
         app.tables.staticTexts["Page 1"].swipeLeft()
         app.tables.buttons["Delete"].tap()
     }
-    
+
+    func testSearch() {
+        XCUIDevice.shared().orientation = .portrait
+        let app = XCUIApplication()
+
+        app.navigationBars.buttons["Search"].tap()
+
+        let searchDocumentSearchField = app.searchFields["Search Document"]
+        searchDocumentSearchField.typeText("PSPDF")
+
+        app.tables["Search Results"].cells.element(boundBy: 0).tap()
+    }
 }
