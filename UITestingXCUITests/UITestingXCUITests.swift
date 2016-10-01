@@ -16,7 +16,8 @@ class UITestingXCUITests: PSPDFTestCase {
 
     func testAddPage() {
         let app = XCUIApplication()
-        
+
+        // Uses XCUIElementQuery
         let navigationBar = app.navigationBars
         navigationBar.buttons["Thumbnails"].tap()
         navigationBar.buttons["Document Editor"].tap()
