@@ -12,10 +12,10 @@ extension XCTestCase {
     @nonobjc var tester: KIFUITestActor { return tester() }
     @nonobjc var system: KIFSystemTestActor { return system() }
 
-    @nonobjc func waitForCondition(condition: @autoclosure @escaping () -> Bool, negateCondition: Bool = false) {
+    @nonobjc func wait(for condition: @autoclosure @escaping (Void) -> Bool, negateCondition: Bool = false) {
         XCTAssertTrue(PSPDFWaitForConditionWithTimeout(30, negateCondition ? { !condition() } : { condition() }))
     }
-    
+
     func tester(file : String = #file, _ line : Int = #line) -> KIFUITestActor {
         return KIFUITestActor(inFile: file, atLine: line, delegate: self)
     }

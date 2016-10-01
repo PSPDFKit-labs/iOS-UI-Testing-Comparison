@@ -58,7 +58,9 @@ class UITestingKIFTests: PSPDFTestCase {
             tester.waitForView(withAccessibilityLabel: "Bookmarks")
 
             tester.tapView(withAccessibilityLabel: "Bookmarks")
-            XCTAssertEqual(controller.document!.bookmarks.count, 1)
+
+            //XCTAssertEqual(controller.document!.bookmarks.count, 1)
+            wait(for: controller.document!.bookmarks.count == 1)
 
             tester.tapView(withAccessibilityLabel: "Outline")
             tester.tapView(withAccessibilityLabel: "Bookmarks")
